@@ -1,0 +1,75 @@
+.btn-blue {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #06caea;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font: 300 17px Roboto, sans-serif;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 0 #ccc;
+}
+
+.btn-blue:hover {
+  background-color: #29dcfa;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.btn-section {
+  float: right;
+}
+
+section .col-title {
+  margin-top: 30px;
+}
+
+section *:first-child {
+  margin-top: 0px;
+}
+
+section .no-jobs {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+section .job {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+section .job .job-title {
+  font: 400 15px Roboto, sans-serif;
+  text-transform: uppercase;
+}
+
+section .job .job-description {
+  margin-top: 5px;
+}
+
+section .col-title {
+  width: calc(100% - 10px);
+  padding-left: 10px;
+  height: 40px;
+  font: 300 30px/40px Roboto, sans-serif;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  display: block;
+}
+
+section.description {
+  margin-top: 60px;
+}
+
+section.description p {
+  margin-left: 10px;
+}
+
+section.openings, .resume {
+  margin-top: 30px;
+  padding-bottom: 0px;
+}

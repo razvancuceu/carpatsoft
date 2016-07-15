@@ -1,0 +1,8 @@
+.slider-front {
+  display: none;
+}
+
+.go-back {
+  margin-top: 30px;
+  cursor: pointer;
+}

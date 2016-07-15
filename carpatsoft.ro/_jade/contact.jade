@@ -1,0 +1,58 @@
+- var videoLink = "video/contact"
+- var pageTitle = "Contact"
+
+html
+	head
+		include headerMeta
+		link(rel="stylesheet" type="text/css" href="/css/contact.css")
+
+	body
+		.fixed-header-background
+		.wrapper
+			include header
+			include slider
+
+			section.contact-page
+				div#map
+				div#map-static
+					a(href="/carpatsoft-map.html")
+						img(src='/img/map.png')
+				
+				.contact-details
+					.company-title Carpatsoft
+					p.subtitle C.U.I. 35327812 &nbsp;&nbsp;&nbsp; F30/753/15.12.2015
+					p.contact-item
+						i(class="fa fa-location-arrow fa-lg")
+						| 16, Aleea Brateș, 400566 Cluj Napoca, Cluj, România
+					p.contact-item
+						i(class="fa fa-phone fa-lg")
+						|(+40) 730 906 935			
+					p.contact-item
+						i(class="fa fa-envelope fa-lg")
+						|office@carpatsoft.com
+					.social-icons
+						a(href="https://www.facebook.com/carpatsoft/" target="_blank" name="Facebook" alt="Facebook")
+							i(class="fa fa-facebook fa-2x")
+						a(href="#" target="_blank" name="Twitter" alt="Twitter")
+							i(class="fa fa-twitter fa-2x")
+						a(href="#" target="_blank" name="Google+" alt="Google+")
+							i(class="fa fa-google-plus fa-2x")
+						a(href="#" target="_blank" name="YouTube" alt="YouTube")
+							i(class="fa fa-youtube fa-2x")
+						a(href="https://www.linkedin.com/company/carpatsoft" target="_blank" name="LinkedIn" alt="LinkedIn")
+							i(class="fa fa-linkedin fa-2x")
+						a(href="#" target="_blank" name="Dribbble" alt="Dribbble")
+							i(class="fa fa-dribbble fa-2x")
+						a(href="#" target="_blank" name="Behance" alt="Behance")
+							i(class="fa fa-behance fa-2x")
+				.message
+					form(name="contact" action="/bin/insert.php" method="post" id="thoughts")
+						input(type="text" placeholder="Scrie-ne un gând anonim..." name="thought" id="thought")
+						input(type="submit" class="btn-blue" name="thought-send" id="thought-send" value="Trimite")
+					p#result
+
+		footer
+			include footer
+			script(src="/js/contact.js" type="text/javascript")
+			script(src="https://maps.googleapis.com/maps/api/js")
+			script(src="/js/map.js" type="text/javascript")

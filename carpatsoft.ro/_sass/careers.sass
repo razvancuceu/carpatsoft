@@ -1,0 +1,35 @@
+@import 'imports'
+
+section
+	.col-title
+		margin-top:30px
+	*:first-child
+		margin-top:0px
+	.no-jobs
+		display:none		//set this to "auto" if there are no jobs
+		text-align:center
+		margin-top:30px
+	.job	
+		margin-top:20px
+		margin-left:10px
+		.job-title
+			font:$boldText
+			text-transform:uppercase
+		.job-description
+			margin-top:5px
+	.col-title
+		width:calc(100% - 10px)
+		padding-left: 10px
+		height:40px
+		font: $mediumText
+		vertical-align:middle
+		background-color: $whiteish
+		display:block
+
+section.description
+	margin-top:60px
+	p
+		margin-left:10px
+section.openings, .resume
+	margin-top:30px
+	padding-bottom:0px

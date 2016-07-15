@@ -1,0 +1,110 @@
+.btn-blue {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #06caea;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font: 300 17px Roboto, sans-serif;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 0 #ccc;
+}
+
+.btn-blue:hover {
+  background-color: #29dcfa;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.btn-section {
+  float: right;
+}
+
+section {
+  margin-top: 60px;
+}
+
+section .col-3 .col-1 {
+  min-height: 300px;
+}
+
+section .col-3 .col-1 img {
+  width: 300px;
+  height: auto;
+}
+
+section .services-page {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  overflow: auto;
+  z-index: -999;
+  float: left;
+}
+
+section .single-item {
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+}
+
+section .single-item .menu-background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section .single-item .item-thumb {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+section .single-item .item-thumb:hover {
+  transform: scale(1.05);
+}
+
+section .single-item .single-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 40px;
+  font: 300 17px Roboto, sans-serif;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+}
+
+section .single-item .services-menu-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+section .single-item .services-menu-wrapper a.services-menu {
+  font: 300 17px Roboto, sans-serif;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 20%;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: rgba(247, 247, 247, 0.9);
+}
+
+section .single-item .services-menu-wrapper a.services-menu:hover {
+  border-left: 3px solid #06caea;
+}

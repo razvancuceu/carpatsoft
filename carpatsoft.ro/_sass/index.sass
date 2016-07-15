@@ -1,0 +1,116 @@
+@import 'imports'
+
+
+section.we-do
+	margin-top:40px
+	.title
+		font:$bigText
+		text-transform: uppercase
+		text-align: center
+		margin:0 !important
+		margin-bottom:30px !important
+		width:100%
+
+section.you-get, section.offers
+	@extend .we-do
+
+.team
+	img
+		width:100px
+		height:100px
+		float:left
+		border-radius:50%
+		transition: all .2s cubic-bezier(0.25,-0.49, 0.8, 1.62)
+	img:hover
+		transform: scale(0.9)
+	.aside-text
+		display: inline-block
+		background-color: $whiteish
+		padding:4px
+		border-radius: 10px
+		margin-left:10px
+		float:left
+		margin-top:28px
+
+		span
+			font:$boldText
+			display: block
+
+section.we-are
+	@extend .we-do
+
+
+section.contact-cta
+	font: $ctaSection
+	background-color:$whiteish
+	width: calc(100% - 20px) !important
+	height: 60px
+	padding:10px
+	margin-top:60px
+	text-transform: uppercase
+	vertical-align: middle
+	float:left
+
+	a
+		height:100%
+		width:270px
+		vertical-align: middle
+		font: $mediumText
+		line-height:60px
+		float:right
+
+
+section.offers
+	.col-3
+		height:250px
+		.col-1
+			height:100%
+			.col-content
+				margin: 0 !important
+				height:100% !important
+				position:relative
+				overflow: hidden
+				color:$blueColor
+				img
+					width:320px
+					max-width:320px
+					height:250px
+				.title
+					position:absolute
+					top:30px
+					left:0px
+					right:0px
+					height:40px
+					font:$mediumText
+					line-height: 40px
+					vertical-align: middle
+					background-color:rgba(255,255,255,.7)
+					margin:0 !important
+					//margin-top: 30px !important
+				.big-number
+					position:absolute
+					top:70px
+					left:0px
+					right:0px
+					bottom:0px
+					font-size:200px
+					font-weight: 400
+					line-height: 180px
+					vertical-align: middle
+					text-align: center
+					overflow: hidden
+					pointer-events: none
+
+					span
+						position:absolute
+						top:-50px
+						right:90px
+						font-size:40px
+						font-weight: 400
+						&.last
+							right:40px
+				img
+					transform: scale(1)
+					transition: all 0.3s ease-in-out
+					&:hover
+						transform: scale(1.05)

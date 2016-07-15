@@ -1,0 +1,72 @@
+@import 'imports'
+
+section.blog-posts
+	article
+		.article-title
+			margin-top:30px
+			width:calc(100% - 10px)
+			padding-left: 10px
+			height:40px
+			font: $mediumText
+			vertical-align:middle
+			background-color: $whiteish
+			display:block
+			position:relative
+			span.blog-title
+				position:absolute
+				left:50px
+			.article-date
+				position:absolute
+				left:0px
+				top:0px
+				height:100%
+				background:$blueColor
+				color:white
+				width:40px
+				padding:0
+				margin:0
+				.date-day
+					position:absolute
+					font-size:30px
+					font-weight:100
+					top:0
+					left:0
+					line-height:28px
+					width:40px
+					text-align:center
+				.date-month
+					position:absolute
+					left:0
+					bottom:0
+					font-size:11px
+					font-weight:100
+					line-height:12px
+					width:40px
+					text-align:center
+		.article-content
+			margin-top:30px
+		.article-footer
+			position:relative
+			width:100%
+			height:25px
+			margin-top:15px
+			line-height: 25px
+			vertical-align: middle
+			margin-bottom:30px
+			span.posted-by
+				span
+					color:$blueColor
+			span.tags
+				margin-left:20px
+				span
+					color:$blueColor
+			.fb-comments-count
+				margin-left:20px
+			.fb-like
+				position:absolute
+				top:2px
+				right:65px
+			.fb-share-button
+				position:absolute
+				top:2px
+				right:0

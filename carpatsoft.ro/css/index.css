@@ -1,0 +1,156 @@
+.btn-blue {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #06caea;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font: 300 17px Roboto, sans-serif;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 0 #ccc;
+}
+
+.btn-blue:hover {
+  background-color: #29dcfa;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.btn-section {
+  float: right;
+}
+
+section.we-do, section.you-get, section.offers, section.we-are {
+  margin-top: 40px;
+}
+
+section.we-do .title, section.you-get .title, section.offers .title, section.we-are .title {
+  font: 300 60px/60px Roboto, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 !important;
+  margin-bottom: 30px !important;
+  width: 100%;
+}
+
+.team img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  border-radius: 50%;
+  transition: all 0.2s cubic-bezier(0.25, -0.49, 0.8, 1.62);
+}
+
+.team img:hover {
+  transform: scale(0.9);
+}
+
+.team .aside-text {
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding: 4px;
+  border-radius: 10px;
+  margin-left: 10px;
+  float: left;
+  margin-top: 28px;
+}
+
+.team .aside-text span {
+  font: 400 15px Roboto, sans-serif;
+  display: block;
+}
+
+section.contact-cta {
+  font: 300 46px/60px Roboto, sans-serif;
+  background-color: #f7f7f7;
+  width: calc(100% - 20px) !important;
+  height: 60px;
+  padding: 10px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  float: left;
+}
+
+section.contact-cta a {
+  height: 100%;
+  width: 270px;
+  vertical-align: middle;
+  font: 300 30px/40px Roboto, sans-serif;
+  line-height: 60px;
+  float: right;
+}
+
+section.offers .col-3 {
+  height: 250px;
+}
+
+section.offers .col-3 .col-1 {
+  height: 100%;
+}
+
+section.offers .col-3 .col-1 .col-content {
+  margin: 0 !important;
+  height: 100% !important;
+  position: relative;
+  overflow: hidden;
+  color: #06caea;
+}
+
+section.offers .col-3 .col-1 .col-content img {
+  width: 320px;
+  max-width: 320px;
+  height: 250px;
+}
+
+section.offers .col-3 .col-1 .col-content .title {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  font: 300 30px/40px Roboto, sans-serif;
+  line-height: 40px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 !important;
+}
+
+section.offers .col-3 .col-1 .col-content .big-number {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  font-size: 200px;
+  font-weight: 400;
+  line-height: 180px;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+section.offers .col-3 .col-1 .col-content .big-number span {
+  position: absolute;
+  top: -50px;
+  right: 90px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+section.offers .col-3 .col-1 .col-content .big-number span.last {
+  right: 40px;
+}
+
+section.offers .col-3 .col-1 .col-content img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+section.offers .col-3 .col-1 .col-content img:hover {
+  transform: scale(1.05);
+}

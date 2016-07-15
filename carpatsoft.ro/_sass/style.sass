@@ -1,0 +1,209 @@
+@import 'imports'
+
+body
+	background-color: $background
+	font: $smallText
+	color: $textColor
+	margin:0
+	padding:0
+	height:100%
+	min-width: 320px
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+	a
+		color:$textColor
+		text-decoration: none
+	a:hover
+		color:$blueColor
+		transition: 200ms ease-in-out
+
+	.fixed-header-background
+		position:fixed
+		top:0px
+		height:30px
+		width:100%
+		background-color:$whiteish
+		border-bottom: 1px solid lighten($textColor, 60)
+		display:none
+		z-index:99
+		-webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,.30);
+		box-shadow: 0 0 5px 2px rgba(0,0,0,.30);
+
+	.wrapper
+		width:960px
+		margin:auto
+		overflow:hidden
+		// margin-bottom:-40px
+		min-height:100%
+
+
+		.header
+			background-color:$whiteish
+			width:100%
+			height:60px
+			display:flex
+			flex-direction:row
+			align-items: center
+			z-index:100
+			div
+				a
+					img:first-child
+						margin-left:10px
+					img:nth-child(2)
+						margin-left: 5px
+			nav
+				margin-left: auto
+				a
+					font:$menuText
+					text-decoration:none
+					text-transform: uppercase
+					margin:0 10px
+			.mobile-nav-toggle
+				display:none
+			.desp
+				display: none
+			*:first-child
+				margin-left:10px
+			.mobile-nav
+				display:none
+
+
+		.slider-behind
+			position:relative
+			background-color:$whiteish
+			width: 960px
+			height: 250px
+			display: block
+			overflow:hidden
+			.slider-img
+				width:100% !important
+				height:auto
+			.slider-front
+				position:absolute
+				top:50%
+				left:0
+				height:120px
+				margin-top:-60px
+				min-width:140px
+				background-color: rgba(255,255,255,.3)
+				img
+					width:59px
+					height:60px
+					line-height: 60px
+					vertical-align: middle
+					margin:0 20px
+				div
+					position:absolute
+					top:50%
+					margin-top:-30px
+					height:60px
+					width:1px
+					background-color:white
+					display: inline-block
+					float:left
+					line-height: 120px
+					vertical-align: middle
+				span
+					font: 100 42px/120px Roboto, sans-serif
+					vertical-align: middle
+					margin:0 20px
+					color:white
+
+		section
+			width:100%
+			overflow: hidden
+			.col-3
+				width:100%
+				overflow: hidden
+				display:block
+				.col-1
+					width:320px
+					vertical-align:top;
+					float:left
+					.col-title
+						width:100%
+						height:40px
+						font: $mediumText
+						vertical-align:middle
+						background-color: $whiteish
+						text-align:center
+						display:block
+						margin:0 !important
+					.col-content
+						margin-top: 10px
+						margin:10px 10px 0 10px
+						height:auto
+						display: block
+						img
+							margin-bottom:10px
+			.title
+				clear:both
+				font: $bigText
+				text-align:center
+
+	.push
+		height:40px
+		width:100%
+		display: block
+		clear: float
+	footer
+		width:100%
+		height: 230px
+		background-color: $whiteish
+		margin-top:40px
+		clear:both
+		display: block
+
+		.container
+			width:940px
+			margin:0 auto
+			height:100%
+			padding:0 10px
+			.col-4
+				width:25%
+				max-width:240px
+				min-height:190px
+				float:left
+				padding-top:10px
+				nav
+					a
+						display:block
+						line-height:20px
+						text-transform:uppercase
+				.title
+					font:$menuText
+					margin-bottom:5px
+				img
+					float:left
+					width: 100%
+					margin: 10px 0
+				.contact-footer
+					display:block
+					p
+						margin:10px 0
+			.subfooter
+				height:20px
+				width:100%
+				display:block
+				clear:both
+				margin-bottom:10px
+				float:left
+				line-height:20px
+				vertical-align:middle
+				.social-icons
+					width:210px
+					height:20px
+					margin-right:20px
+					float:left
+					i
+						width:20px
+						height:20px
+						border-radius: 50%
+						line-height:20px
+						vertical-align:middle
+						text-align:center
+						color:$whiteish
+						background-color:$textColor
+						margin-right:10px
+					i:hover
+						color:$blueColor
+						transition: 300ms ease-in-out

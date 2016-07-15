@@ -1,0 +1,29 @@
+-var pageTitle = "Optimizare SEO"
+html
+	head
+		include headerMeta
+		link(rel="stylesheet" type="text/css" href="/css/portfolio.css")
+		
+	body
+		.fixed-header-background
+		.wrapper
+			include header
+			include slider
+			section
+				.items-wrap
+					.single-item
+						.menu-background-img
+							img(src='/img/menu-portfolio.jpg')
+						.portfolio-menu-wrapper
+							include portfolio-menu
+					:verbatim
+						{% for post in site.categories.seo %}
+							<div class="single-item">
+								<img src="/img/portfolio/{{ post.thumbimg }}" alt="{{ post.projectname }}" name="{{ post.projectname }}" class="item-thumb"/>
+								<div class="single-header">{{ post.projectname }}</div>
+								<a href="{{ post.url | prepend: site.baseurl }}" class="btn-blue btn-single-item">Details</a>
+							</div>
+						{% endfor %}
+		footer
+			include footer
+			script(src="/js/portfolio.js" type="text/javascript")

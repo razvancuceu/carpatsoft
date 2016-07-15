@@ -1,0 +1,117 @@
+.btn-blue {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #06caea;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font: 300 17px Roboto, sans-serif;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 0 #ccc;
+}
+
+.btn-blue:hover {
+  background-color: #29dcfa;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.btn-section {
+  float: right;
+}
+
+section.blog-posts article .article-title {
+  margin-top: 30px;
+  width: calc(100% - 10px);
+  padding-left: 10px;
+  height: 40px;
+  font: 300 30px/40px Roboto, sans-serif;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  display: block;
+  position: relative;
+}
+
+section.blog-posts article .article-title span.blog-title {
+  position: absolute;
+  left: 50px;
+}
+
+section.blog-posts article .article-title .article-date {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background: #06caea;
+  color: white;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+section.blog-posts article .article-title .article-date .date-day {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 100;
+  top: 0;
+  left: 0;
+  line-height: 28px;
+  width: 40px;
+  text-align: center;
+}
+
+section.blog-posts article .article-title .article-date .date-month {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 12px;
+  width: 40px;
+  text-align: center;
+}
+
+section.blog-posts article .article-content {
+  margin-top: 30px;
+}
+
+section.blog-posts article .article-footer {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  margin-top: 15px;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+section.blog-posts article .article-footer span.posted-by span {
+  color: #06caea;
+}
+
+section.blog-posts article .article-footer span.tags {
+  margin-left: 20px;
+}
+
+section.blog-posts article .article-footer span.tags span {
+  color: #06caea;
+}
+
+section.blog-posts article .article-footer .fb-comments-count {
+  margin-left: 20px;
+}
+
+section.blog-posts article .article-footer .fb-like {
+  position: absolute;
+  top: 2px;
+  right: 65px;
+}
+
+section.blog-posts article .article-footer .fb-share-button {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}

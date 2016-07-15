@@ -1,0 +1,55 @@
+- var videoLink = "video/careers"
+- var pageTitle = "Careers"
+
+html
+	head
+		include headerMeta
+		link(rel="stylesheet" type="text/css" href="/css/careers.css")
+		
+	body
+		.fixed-header-background
+		.wrapper
+			include header
+			include slider
+
+
+			section.description
+				.col-title Description
+				p
+					|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed dolor eget tortor faucibus rutrum. Phasellus fringilla est at sem congue, vel pharetra ipsum auctor. Mauris dignissim lacinia laoreet.
+					|Maecenas blandit luctus urna. Praesent nec elit molestie, vulputate est eu, eleifend metus. Fusce bibendum, dolor vestibulum pretium aliquet, sapien felis vehicula eros, ut tempor libero arcu vitae nisl. Prae-
+					|sent pellentesque, eros sed egestas scelerisque, felis sem egestas lorem, vitae sodales mauris nisl nec sem. Duis dignissim odio ante, et faucibus lacus dignissim id. Sed ornare faucibus enim, eget lobortis
+					|ante vestibulum eu. Cras porta lacus sodales eros posuere, vel consequat neque tristique. Vestibulum elementum enim id sem vehicula ornare. Vestibulum euismod ullamcorper sapien ut scelerisque. In
+					|ornare id arcu molestie lacinia. Maecenas gravida sodales mi, ac scelerisque diam rhoncus vel. Donec gravida, nunc ac porttitor hendrerit, nisi massa gravida augue, non interdum lorem nunc in arcu.
+				p
+					|Mauris tristique elit nec tincidunt iaculis. Vivamus quis convallis eros, sollicitudin aliquam purus. Pellentesque sed elit justo. Proin at maximus tortor. Ut id massa eget ligula pulvinar suscipit et at quam. Nam
+					|et vulputate lacus. Aliquam id faucibus neque. Ut posuere tempor sapien et scelerisque. Cras lobortis ante eget eros posuere ultrices. Nunc sodales dapibus metus nec pretium. Mauris sit amet dolor neque.
+					|Ut aliquam, elit at egestas convallis, ex nibh maximus felis, quis condimentum dui purus in ex.
+				
+
+			section.openings
+				.col-title Job openings
+				p.no-jobs
+					|We are sorry. For the moment we don’t have any open position.
+					br
+					|You can still send your resume and we will contact you if it will fit in a future opened job.
+				.job
+					a(href="#")
+						.job-title Front-End Developer
+					.subtitle Location: Cluj Napoca; Experience: Entry level
+					.job-description 
+						|Mauris fermentum sem a urna tempus, vitae lobortis massa semper. Sed in fermentum dui. Vestibulum efficitur elit consequat rutrum suscipit. Pellentesque eu neque dui. In quis placerat massa, sed
+						|placerat purus. Donec ultrices, lacus id convallis iaculis, sapien tellus volutpat lectus, venenatis condimentum lectus tellus facilisis nibh.
+				.job
+					a(href="#")
+						.job-title Front-End Developer
+					.subtitle Location: Cluj Napoca; Experience: Entry level
+					.job-description 
+						|Mauris fermentum sem a urna tempus, vitae lobortis massa semper. Sed in fermentum dui. Vestibulum efficitur elit consequat rutrum suscipit. Pellentesque eu neque dui. In quis placerat massa, sed
+						|placerat purus. Donec ultrices, lacus id convallis iaculis, sapien tellus volutpat lectus, venenatis condimentum lectus tellus facilisis nibh.
+
+				
+			section.resume
+				.col-title Send us your resumé
+		footer
+			include footer

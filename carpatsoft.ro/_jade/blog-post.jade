@@ -1,0 +1,38 @@
+- var pageTitle = "s"
+
+html
+	head
+		include headerMeta
+		link(rel="stylesheet" type="text/css" href="/css/blog.css")
+		link(rel="stylesheet" type="text/css" href="/css/blog-post.css")
+
+		
+	body
+		.fixed-header-background
+		.wrapper
+			include header
+			|<div class="slider-behind"><img src="{{ page.sliderimg }}" class="slider-img"/></div>
+
+			section.blog-posts
+				article
+					i(class="fa fa-long-arrow-left go-back" onclick="goBack()")
+					span(onclick="goBack()" class="go-back") Înapoi
+					.article-title 
+						.article-date
+							.date-day {{ page.date | date: "%d" }}
+							.date-month {{ page.date | date: "%m.%Y" }}
+						span.blog-title {{ page.title }}
+	
+					.article-content
+						|{{ content }}
+					.article-footer
+						span.posted-by Postat de <span>{{page.author}}</span>
+						:verbatim
+							<div class="fb-like" data-href="http://www.carpatsoft.ro/{{ page.url }}" data-layout="button" data-action="like" data-show-faces="false"></div><div class="fb-share-button" data-href="http://www.carpatsoft.ro/{{ page.url }}" data-layout="button"></div>
+				:verbatim
+					<div class="fb-comments" data-href="http://www.carpatsoft.ro/{{ page.url }}" data-numposts="5" data-width="100%"></div>
+						
+
+
+		footer
+			include footer

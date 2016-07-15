@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include headerMeta.html %}
+    <link rel="stylesheet" type="text/css" href="/css/portfolio-item.css"/>
+
+  </head>
+  <body>
+    <div class="fixed-header-background"></div>
+    <div class="wrapper">
+      {% include header.html %}
+      <div class="slider-behind"><img src="/img/portfolio/{{ page.sliderimg }}"/></div>
+      <section>
+        <div class="title portfolio-title">{{ page.projectname }}</div>
+      </section>
+      <section class="overview">
+        <div class="col-title">Despre proiect</div>
+        <p>
+         {{ content }}
+        </p>
+      </section>
+      <section class="about">
+        <div class="col-title">Detalii</div>
+        <p class="contact-item"><i class="fa fa-circle"></i>Titlu proiect: {{ page.projectname }}</p>
+        <p class="contact-item"><i class="fa fa-link"></i>Link: <a href=" http://{{ page.link }} " target="_blank" title="{{ page.title }}">{{ page.link }}</a></p>
+        <p class="contact-item"><i class="fa fa-calendar-o"></i>Început: {{ page.startdate }}</p>
+        <p class="contact-item"><i class="fa fa-calendar-check-o"></i>Terminat: {{ page.enddate }}</p>
+        <p class="contact-item"><i class="fa fa-user"></i>Client: {{ page.clientname }}</p>
+        <p class="contact-item"><i class="fa fa-envelope"></i>Email: {{ page.email }}</p>
+        <p class="contact-item"><i class="fa fa-phone"></i>Telefon: {{ page.phone }}</p>
+        <p class="contact-item"><i class="fa fa-code"></i>Tehnologii folosite: {{ page.technologies }}</p>
+      </section>
+    </div>
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </body>
+</html>

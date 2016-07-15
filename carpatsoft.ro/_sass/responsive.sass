@@ -1,0 +1,359 @@
+@import 'imports'
+=rotate($degrees)
+	-webkit-transform: rotate($degrees)
+	-moz-transform:    rotate($degrees)
+	-o-transform:      rotate($degrees)
+	-ms-transform:     rotate($degrees)
+	transform:		   rotate($degrees)
+=origin($origin)
+	-webkit-transform-origin: $origin
+	-moz-transform-origin:    $origin
+	-o-transform-origin:      $origin
+	-ms-transform-origin:     $origin
+	transform-origin:		  $origin
+
+
+
+@media (max-width: 960px)
+	body
+		footer
+  			.container
+  				width: auto
+		.wrapper
+  			width: 100%
+  			section
+  				.col-3
+  					.col-1
+  						width: 33%
+  						img
+  							max-width: 300px
+  							width:100%
+
+  			.slider-behind
+  				width: 100%
+  				height: auto
+  			section.contact-page
+  				overflow-x: visible
+  				padding-bottom:140px
+  				#map
+  					width: calc(100% - 330px)
+	  			.message
+	  				bottom: 0px
+	  				left:10px
+	  				width: calc(100% - 20px)
+	  				input[type="text"]
+	  					width: calc(100% - 320px)
+	  					
+	  				input[type="submit"]
+	  					width: 310px
+	  					top:0px
+	  					right:0px
+
+
+
+/*------------------------------------------*/
+
+
+
+@media (max-width: 900px)
+	body
+		.wrapper
+			section.contact-cta
+				span
+					font-size: 32px
+
+
+/*------------------------------------------*/
+
+
+@media (max-width: 800px)
+	body
+		.wrapper
+			section
+				.col-3
+					.col-1
+						width:50%
+						display:inline-block
+						&:last-child
+							clear:both
+						.col-content
+							max-width:400px
+							margin: 10px auto
+							padding:0 10px
+						img
+							max-width:400px
+							width:100%
+							display: block
+			section.offers
+				.col-3
+					.col-1
+						width:33%
+						height:auto
+						float:left
+						&:last-child
+							clear:none
+						.col-content
+							padding:0	
+
+
+							.title
+								font-size: 25px !important
+							.big-number
+								span
+									right:20%
+									&.last
+										right:5%
+
+
+
+			section.we-do, .you-get
+				.btn-section
+					margin-top:-90px
+			section.contact-page	
+				#map
+					height:250px
+
+
+
+
+/*------------------------------------------*/
+
+
+
+@media (max-width: 720px)
+	body
+		.wrapper
+			.header
+				nav
+					a
+						font-size: 13px
+			section.contact-cta
+				height:120px
+				text-align: center
+				span
+					font: $ctaSection
+					display: block
+					margin: 0 auto
+					width: 610px
+
+				a
+					height: 60px
+					float: none
+					text-align: center
+					margin: 0 auto
+			section.contact-page
+				#map
+					display: none
+				#map-static
+					display: block
+					margin-bottom:30px
+				.contact-details
+					width: calc(100% - 20px)
+				.message
+	  				input[type="text"]
+	  					width: calc(100% - 165px)
+	  					
+	  				input[type="submit"]
+	  					width: 155px
+			section.offers
+	  			.col-3
+	  				.col-1
+	  					.col-content
+	  						.title
+	  							font-size:22px !important
+
+
+/*------------------------------------------*/
+
+
+@media (max-width: 620px)
+	body
+		.wrapper
+			section
+				.col-3
+  					.col-1
+  						width: 100%
+  						margin-top: 30px
+  						min-height:auto
+  					div:first-child
+  						margin-top: 0px !important
+				.title
+					font-size: 45px
+				.single-item
+					float:none
+			.slider-behind
+				.slider-front
+					height: 80px
+					margin-top: -40
+					img
+						margin:0 15px
+					div
+						height: 50px
+						margin-top: -25
+					span
+						line-height: 80px
+						margin:0 15px
+			.header
+				div:first-child
+					display: none
+				nav
+					a
+						font-size: 13px
+			section.contact-cta
+				span
+					font-size:30px
+					width: 400px
+			
+			section.we-do, .you-get
+				.btn-section
+					margin-top:0px
+
+			section.offers
+				.col-3
+					height:auto
+					.col-1
+						width:320px
+						height:250px
+						float:none !important
+						margin-left:auto
+						margin-right:auto
+						display:block
+						.col-content
+							.title
+								font:$mediumText !important
+
+
+
+		.btn-section
+			margin: 20px 0 0 20px
+
+
+		footer
+			height: 430px
+			.container
+				margin-left:7%
+				.col-4
+					width: 50%
+					
+
+
+/*------------------------------------------*/
+
+
+@media (max-width: 520px)
+	body
+		.tint
+			width:100%
+			height:calc(100% + 60px)
+			background-color: rgba(34,34,34,0.7)
+			position:fixed
+			top:0
+			display:none
+			opacity: 0
+		.wrapper
+			.header
+				position: relative
+				nav
+					display:none
+				.mobile-nav-toggle
+					width: 40px
+					height: 40px
+					margin-left: auto
+					margin-right:20px
+					cursor: pointer
+					//background-color:pink
+					display: flex
+					align-items: center
+					&:active
+						background: transparent
+					&:hover
+						background: transparent
+					span,
+					span:before,
+					span:after
+						content: ""
+						margin-left: 0px
+						display: block
+						background-color: $textColor
+						width: 40px
+						height: 2px
+						position:relative
+						transition: all 0.1s
+					span:before
+						top: 9px
+					span:after
+						top: -12px
+					span.changed
+						background: transparent
+					span.changed:before,
+					span.changed:after
+						+origin(54%)
+						+rotate(45deg)
+						top: 0
+					span.changed:before
+						+rotate(-45deg)
+				.mobile-nav
+					position:absolute
+					top:-325px
+					left:0px
+					width: 100%
+					background-color: $whiteish
+					text-align: center
+					z-index:-1
+					padding-bottom:20px
+					display: none
+					nav
+						display:inline-block
+						a
+							display:block
+							padding:10px 0
+				.is-open
+					display:block
+		footer
+			height: 440px
+			.container
+				margin-left:auto
+				.subfooter
+					.social-icons
+						width: 175px
+						i
+							margin-right:5px
+	  	
+
+
+/*------------------------------------------*/
+
+@media (max-width: 420px)
+	body
+		.wrapper
+			section.contact-cta
+				height: 60px
+				span
+					display: none
+			section.company
+				img
+					width:120px
+			section.team
+				img
+					width:150px
+			section.mission
+				.col-title 
+					margin-left: 120px
+				img
+					width:100px
+					margin-right:10px
+			section.friends
+				img
+					width:155px
+			section.contact-page
+				.message
+	  				input[type="text"]
+	  					width: 100%
+	  					
+	  				input[type="submit"]
+	  					width: 100%
+	  					top:70px
+	  	footer
+			.container
+				htight:500px
+	  	

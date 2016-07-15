@@ -1,0 +1,21 @@
+-var pageTitle = "Logo Design"
+html
+	head
+		include headerMeta
+		link(rel="stylesheet" type="text/css" href="/css/services.css")
+		
+	body
+		.fixed-header-background
+		.wrapper
+			include header
+			include slider
+			section
+				.items-wrap
+					.single-item
+						.menu-background-img
+							img(src='/img/menu-portfolio.jpg')
+						.services-menu-wrapper
+							include services-menu
+					{{ content}}
+		footer
+			include footer

@@ -1,0 +1,97 @@
+.btn-blue {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #06caea;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font: 300 17px Roboto, sans-serif;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 0 #ccc;
+}
+
+.btn-blue:hover {
+  background-color: #29dcfa;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.btn-section {
+  float: right;
+}
+
+section .col-title {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  padding-left: 20px;
+  height: 40px;
+  font: 300 30px/40px Roboto, sans-serif;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  display: block;
+}
+
+section *:first-child {
+  margin-top: 0px;
+}
+
+section p {
+  margin-left: 10px;
+}
+
+section .title {
+  margin-top: 60px;
+}
+
+section p span {
+  font-size: 60px;
+  font-family: 'Great Vibes';
+  line-height: 45px;
+  float: left;
+  margin-right: 10px;
+}
+
+section.company {
+  margin-top: 30px;
+}
+
+section.company img {
+  float: left;
+  padding-right: 10px;
+  height: 220px;
+  width: auto;
+}
+
+section.team {
+  margin-top: 30px;
+}
+
+section.team img {
+  float: right;
+}
+
+section.mission {
+  margin-top: 30px;
+  overflow: visible !important;
+}
+
+section.mission .col-title {
+  margin-left: 160px;
+  padding-left: 10px;
+}
+
+section.mission img {
+  float: left;
+  margin: -30 20 0 20;
+}
+
+section.friends {
+  margin-top: 50px;
+}
+
+section.friends img {
+  float: right;
+}

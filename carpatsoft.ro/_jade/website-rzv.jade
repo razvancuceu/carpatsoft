@@ -1,0 +1,67 @@
+- var coverImage = "/portfolio/11-08-2015/razvancuceu/img/cover-razvan-cuceu.jpg"
+
+
+//- A B O U T   T H E   P R O J E C T
+- var projectTitle = "Razvan Cuceu Website"
+- var link = "www.razvancuceu.com"
+- var startDate = "01/06/2015"
+- var endDate = "11/08/2015"
+- var employerName = "Razvan Cuceu"
+- var employerEmail = "rzv.cuceu@gmail.com"
+- var employerPhone = "0730906935"
+- var technologies = "HTML/HTML5, CSS/CSS3, Javascript/jQuery, PHP"
+
+
+html
+	head
+		include headerMeta
+		link(rel="stylesheet" type="text/css" href="/css/portfolio-item.css")
+		
+	body
+		.fixed-header-background
+		.wrapper
+			include header
+
+			.slider-behind
+				img(src=coverImage)
+
+
+			section
+				.title=projectTitle
+			section.overview
+				.col-title Overview
+				p
+					|Mauris tristique elit nec tincidunt iaculis. Vivamus quis convallis eros, sollicitudin aliquam purus. Pellentesque sed elit justo. Proin at maximus tortor. Ut id massa eget ligula pulvinar suscipit et at quam. Nam
+					|et vulputate lacus. Aliquam id faucibus neque. Ut posuere tempor sapien et scelerisque. Cras lobortis ante eget eros posuere ultrices. Nunc sodales dapibus metus nec pretium. Mauris sit amet dolor neque.
+					|Ut aliquam, elit at egestas convallis, ex nibh maximus felis, quis condimentum dui purus in ex.
+
+
+			section.about
+				.col-title Details
+				p.contact-item
+					i(class="fa fa-circle")
+					|Project title: #{projectTitle}
+				p.contact-item
+					i(class="fa fa-link")
+					|Link: <a href="#{link}">#{link}</a>
+				p.contact-item
+					i(class="fa fa-calendar-o")
+					|Start date: #{startDate}
+				p.contact-item
+					i(class="fa fa-calendar-check-o")
+					|End date: #{endDate}
+				p.contact-item
+					i(class="fa fa-user")
+					|Employer: #{employerName}
+				p.contact-item
+					i(class="fa fa-envelope")
+					|Email: #{employerEmail}
+				p.contact-item
+					i(class="fa fa-phone")
+					|Phone: #{employerPhone}
+				p.contact-item
+					i(class="fa fa-code")
+					|Technologies: #{technologies}
+
+		footer
+			include footer
